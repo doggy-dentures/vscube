@@ -1,0 +1,37 @@
+:cube:Hah hah...splendid.
+:cube:You're such an interesting being.
+:minesweeper:Really?
+:cube:Yes...
+:cube:But our time together has only just begun.
+:cube:In fact, let's have you meet with the others.
+:minesweeper:Others?
+:cube:Why don't I introduce you all?
+::*snap*
+::...
+:minesweeper:Eh...?
+:bf:Be bop pa!
+:skid:Hello there!
+:pump:Hello Robot guy!
+:mom:Is your head a computer?
+:cat:Meow!
+:pico:You look like a robot without limbs.
+:anders:What dimension did you come from?
+:dad:Do I know you?
+:senpai:Are you also from a game?
+:salesman:I don't sell Windows, but I do sell doors!
+:atlanta:*Surfs* up!
+:cube:Hmmm...
+:cube:Seeing you all in one place, I've changed my mind.
+:cube:How about a little wager?
+:cube:Two of you will challenge me, and if you win, I'll let you all leave.
+:pump:And if we don't win?
+:cube:You'll be stuck here forever.
+:cube:...Oh, I almost forgot.
+:cube:You'll be facing me in my final form too.
+*flash*
+:round:No longer am I Untextured Default Blender Cube.
+:round:I am now Slightly Textured Rounded Blender Cube.
+:round:How about it? Who's up for the task?
+:minesweeper:I'll go.
+:round:Very nice!
+:round:Now then, who else wants to challenge me?

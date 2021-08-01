@@ -1,0 +1,9 @@
+:cube:Hello there, little ones.
+:skid:Hello, stranger!
+:pump:Did you bring us here to show you the spooky dance?
+:cube:In a way, I suppose so.
+:cube:I brought you two here to observe your singing abilities.
+:cube:Of course, that includes your coordinated dance.
+:cube:So let's start with a simple song.
+:spooky:Yay! Spooky dance!
+

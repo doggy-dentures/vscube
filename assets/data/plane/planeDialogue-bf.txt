@@ -1,0 +1,16 @@
+:cube:Hello there, little one.
+:bf:Blip bloop.
+:cube:Please, take a seat.
+:cube:Oh wait, there are no seats here.
+:cube:It seems you'll have to remain standing.
+:bf:Beep bap.
+:cube:You caused quite the havoc during that bout with ol' Suzanne a while ago, you know.
+:cube:Took that monkey a whole weekend to clean up the mess you made.
+:bf:Bup boop?
+:cube:I took a keen interest in you after that affair.
+:cube:So, I've brought you here to test you.
+:cube:Say pal, are you up for a song?
+:bf:Bleep!
+:cube:Good, good.
+:cube:I won't be testing you on just your singing though.
+:cube:Let's see how confident you are in your marksmanship.

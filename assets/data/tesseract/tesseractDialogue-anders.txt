@@ -1,0 +1,35 @@
+:anders:Enough games.
+:anders:This plane is reaching its limit.
+:anders:Let me leave before it collapses.
+:cube:Now, now. Let's not jump ahead.
+:cube:There's so much more I want you to do.
+:cube:I haven't even introduced you to the others yet.
+:anders:You brought others here?
+::*snap*
+::...
+:dad:Looks like we have one more person here.
+:skid:Cool mask, mister!
+:pump:Are you dressing up for spooky month too?
+:mom:Welcome to the club, newcomer.
+:salesman:Could I interest you in a premium-grade door?
+:cat:Meow.
+:minesweeper:Hello, gun guy!
+:pico:Neat gun ya got there.
+:senpai:Are your eyes supposed to look like that?
+:bf:Boop beelap?
+:atlanta:Hey! I've seen your kind down under!
+:cube:Hmmm...
+:cube:Seeing you all in one place, I've changed my mind.
+:cube:How about a little wager?
+:cube:Two of you will challenge me, and if you win, I'll let you all leave.
+:pico:And if we lose...?
+:cube:You'll be stuck here forever.
+:cube:...Oh, I almost forgot.
+:cube:You'll be facing me in my final form too.
+::*flash*
+:round:No longer am I Untextured Default Blender Cube.
+:round:I am now Slightly Textured Rounded Blender Cube.
+:round:How about it? Who's up for the task?
+:anders:I'll take care of this.
+:round:Very nice!
+:round:Now then, who else wants to challenge me?

@@ -1,0 +1,35 @@
+:cube:Hah hah...splendid.
+:cube:You're such an interesting cat.
+:cat:Meow.
+:cube:Come now, we're only just getting started. Why leave now?
+:cube:You've yet to sing with the others I brought here.
+:cube:Why don't I introduce you to everyone else?
+::*snap*
+::...
+:cat:Meow?
+:atlanta:EEP! A monster!
+:skid:Hey, it's a kitty cat!
+:pump:Here, kitty kitty!
+:mom:Aww, how adorable.
+:minesweeper:Well aren't you a little cute being.
+:pico:Whose cat is that?
+:dad:And you even brought a cat here?
+:anders:How small.
+:senpai:A little cat that can rap? That's unheard of.
+:salesman:Hmm, I think I've got a cat door somewhere.
+:bf:Skadoop?
+:cube:Hmmm...
+:cube:Seeing you all in one place, I've changed my mind.
+:cube:How about a little wager?
+:cube:Two of you will challenge me, and if you win, I'll let you all leave.
+:bf:Beep boop?
+:cube:And if you lose, you'll be stuck here forever.
+:cube:...Oh, I almost forgot.
+:cube:You'll be facing me in my final form too.
+::*flash*
+:round:No longer am I Untextured Default Blender Cube.
+:round:I am now Slightly Textured Rounded Blender Cube.
+:round:How about it? Who's up for the task?
+:cat:Meow!
+:round:Very nice!
+:round:Now then, who else wants to challenge me?

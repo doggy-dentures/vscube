@@ -1,0 +1,6 @@
+:cat:Meow
+:cube:Not too shabby, fuzzy one.
+:cat:Meow?
+:cube:We'll answer some questions later..
+:cube:The next challenge starts now.
+:cat:...

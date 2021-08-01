@@ -1,0 +1,9 @@
+:pico:Hmm, this doesn't look like The Portal.
+:cube:Hello there, Pico.
+:pico:Who are you?
+:cube:Don't be alarmed.
+:cube:I brought you here out of interest, nothing more.
+:pico:Is there something you want from me?
+:cube:I'd just like to hear how well you do in a music bout.
+:pico:Ugh, not again. Singing really isn't my thing.
+:cube:Don't worry. This involves your gunmanship as well.

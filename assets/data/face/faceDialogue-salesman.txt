@@ -1,0 +1,9 @@
+:salesman:So?
+:cube:Not bad.
+:cube:I would like to see a bit more though.
+:salesman:I see that wasn't enough to satisfy you.
+:cube:How about we go again?
+:salesman:On one condition.
+:cube:Hmm?
+:salesman:If I pass this test, you must purchase my wares.
+:cube:Alright, I'll take you up on that.

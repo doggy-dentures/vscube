@@ -1,0 +1,33 @@
+:cube:Wow, what a stunning performance!
+:salesman:I really think I should get going now.
+:cube:Settle down now.
+:cube:You didn't even get to meet the others yet.
+:salesman:Others...?
+::*snap*
+::...
+:cat:Meow!
+:mom:What are all those doors for?
+:anders:I'm not interested in whatever you're selling.
+:pico:How do you carry all of those doors?
+:skid:Trick or treat!
+:pump:If we knock on your doors, will you give us candy?
+:atlanta:Sorry *Dorsals-person*, not looking for wares!
+:bf:Baloop!
+:dad:You look really familiar...
+:senpai:What an odd profession.
+:minesweeper:Hello, Door Man.
+:cube:Hmmm...
+:cube:Seeing you all in one place, I've changed my mind.
+:cube:How about a little wager?
+:cube:Two of you will challenge me, and if you win, I'll let you all leave.
+:senpai:And if we don't win...?
+:cube:You'll be stuck here forever.
+:cube:...Oh, I almost forgot.
+:cube:You'll be facing me in my final form too.
+::*flash*
+:round:No longer am I Untextured Default Blender Cube.
+:round:I am now Slightly Textured Rounded Blender Cube.
+:round:How about it? Who's up for the task?
+:salesman:I guess I'll do it.
+:round:Very nice!
+:round:Now then, who else wants to challenge me?

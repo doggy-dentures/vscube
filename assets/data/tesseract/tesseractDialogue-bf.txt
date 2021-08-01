@@ -1,0 +1,35 @@
+:cube:Hah hah...splendid.
+:cube:You're such an interesting specimen.
+:bf:Kadoop!
+:cube:Come now, we're only just getting started. Why leave now?
+:cube:You've yet to sing with the others I brought here.
+:cube:Why don't I introduce you to everyone else?
+::*snap*
+::...
+:bf:Skadoop?
+:skid:Hey, it's the blue-haired kid we met before!
+:pump:Hello again!
+:mom:Oh, well look who it is.
+:pico:So that cube thing brought you here too?
+:anders:So we meet again.
+:dad:Of all people, YOU had to be here too, huh?
+:minesweeper:Well hello there Boyfriend, we meet again, huh?
+:senpai:Long time no see, little squirt.
+:salesman:Uh oh.
+:atlanta:Nice to *sea* you again!
+:cat:Meow!
+:cube:Hmmm...
+:cube:Seeing you all in one place, I've changed my mind.
+:cube:How about a little wager?
+:cube:Two of you will challenge me, and if you win, I'll let you all leave.
+:pico:And if we lose...?
+:cube:You'll be stuck here forever.
+:cube:...Oh, I almost forgot.
+:cube:You'll be facing me in my final form too.
+::*flash*
+:round:No longer am I Untextured Default Blender Cube.
+:round:I am now Slightly Textured Rounded Blender Cube.
+:round:How about it? Who's up for the task?
+:bf:Beep!
+:round:Very nice!
+:round:Now then, who else wants to challenge me?

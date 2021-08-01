@@ -1,0 +1,10 @@
+:salesman:Something's off.
+:salesman:I want to leave.
+:cube:What's wrong? Didn't you want me to take a look at your wares?
+:salesman:Listen, I've got two kids at home.
+:salesman:One's probably munching on a wire as we speak.
+:cube:That doesn't sound very sma-
+:salesman:He's a robot and he's driving up my electricity bill.
+:salesman:Once again, I'm asking you to let me leave.
+:cube:Unfortunately, that's not in the cards for you.
+:cube:I will tell you what's in the cards though. The next song.

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="CAT.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="cat Sing Note DOWN0000" x="0" y="0" width="625" height="293" frameX="0" frameY="0" frameWidth="628" frameHeight="1102"/>
+	<SubTexture name="cat Sing Note DOWN0001" x="0" y="0" width="625" height="293" frameX="0" frameY="0" frameWidth="628" frameHeight="1102"/>
+	<SubTexture name="cat Sing Note DOWN0002" x="625" y="0" width="625" height="302" frameX="-3" frameY="0" frameWidth="628" frameHeight="1102"/>
+	<SubTexture name="cat Sing Note DOWN0003" x="625" y="0" width="625" height="302" frameX="-3" frameY="0" frameWidth="628" frameHeight="1102"/>
+	<SubTexture name="cat Sing Note DOWN0004" x="625" y="0" width="625" height="302" frameX="-3" frameY="0" frameWidth="628" frameHeight="1102"/>
+	<SubTexture name="cat Sing Note DOWN0005" x="625" y="0" width="625" height="302" frameX="-3" frameY="0" frameWidth="628" frameHeight="1102"/>
+	<SubTexture name="cat Sing Note LEFT0000" x="1250" y="0" width="603" height="283"frameX="-1" frameY="0" frameWidth="615" frameHeight="297"/>
+	<SubTexture name="cat Sing Note UP0000" x="2458" y="0" width="614" height="293" frameX="-1" frameY="0" frameWidth="615" frameHeight="297"/>
+	<SubTexture name="cat Sing Note UP0001" x="2458" y="0" width="614" height="293" frameX="-1" frameY="0" frameWidth="615" frameHeight="297"/>
+	<SubTexture name="cat Sing Note UP0002" x="3072" y="0" width="613" height="295" frameX="0" frameY="0" frameWidth="615" frameHeight="297"/>
+	<SubTexture name="cat Sing Note UP0003" x="3072" y="0" width="613" height="295" frameX="0" frameY="0" frameWidth="615" frameHeight="297"/>
+	<SubTexture name="cat Sing Note UP0004" x="3072" y="0" width="613" height="295" frameX="0" frameY="0" frameWidth="615" frameHeight="297"/>
+	<SubTexture name="cat Sing Note UP0005" x="3072" y="0" width="613" height="295" frameX="0" frameY="0" frameWidth="615" frameHeight="297"/>
+	<SubTexture name="cat Sing Note UP0006" x="3072" y="0" width="613" height="295" frameX="0" frameY="0" frameWidth="615" frameHeight="297"/>
+	<SubTexture name="cat Sing Note UP0007" x="3072" y="0" width="613" height="295" frameX="0" frameY="0" frameWidth="615" frameHeight="297"/>
+	<SubTexture name="cat Sing Note UP0008" x="3072" y="0" width="613" height="295" frameX="0" frameY="0" frameWidth="615" frameHeight="297"/>
+	<SubTexture name="cat Sing Note UP0009" x="3072" y="0" width="613" height="295" frameX="0" frameY="0" frameWidth="615" frameHeight="297"/>
+	<SubTexture name="cat Sing Note UP0010" x="3072" y="0" width="613" height="295" frameX="0" frameY="0" frameWidth="615" frameHeight="297"/>
+	<SubTexture name="cat idle dance0000" x="0" y="302" width="633" height="297" frameX="-10" frameY="0" frameWidth="643" frameHeight="297"/>
+	<SubTexture name="cat idle dance0001" x="0" y="302" width="633" height="297" frameX="-10" frameY="0" frameWidth="643" frameHeight="297"/>
+	<SubTexture name="cat idle dance0002" x="633" y="302" width="643" height="283" frameX="0" frameY="0" frameWidth="643" frameHeight="297"/>
+	<SubTexture name="cat idle dance0003" x="633" y="302" width="643" height="283" frameX="0" frameY="0" frameWidth="643" frameHeight="297"/>
+	<SubTexture name="cat idle dance0004" x="1276" y="302" width="641" height="288" frameX="-2" frameY="0" frameWidth="643" frameHeight="297"/>
+	<SubTexture name="cat idle dance0005" x="1276" y="302" width="641" height="288" frameX="-2" frameY="0" frameWidth="643" frameHeight="297"/>
+	<SubTexture name="cat idle dance0006" x="1917" y="302" width="639" height="294" frameX="-3" frameY="0" frameWidth="643" frameHeight="297"/>
+	<SubTexture name="cat idle dance0007" x="1917" y="302" width="639" height="294" frameX="-3" frameY="0" frameWidth="643" frameHeight="297"/>
+	<SubTexture name="cat idle dance0008" x="2556" y="302" width="634" height="297" frameX="-8" frameY="0" frameWidth="643" frameHeight="297"/>
+	<SubTexture name="cat idle dance0009" x="2556" y="302" width="634" height="297" frameX="-8" frameY="0" frameWidth="643" frameHeight="297"/>
+	<SubTexture name="cat idle dance0010" x="0" y="302" width="633" height="297" frameX="-10" frameY="0" frameWidth="643" frameHeight="297"/>
+	<SubTexture name="cat idle dance0011" x="0" y="302" width="633" height="297" frameX="-10" frameY="0" frameWidth="643" frameHeight="297"/>
+	<SubTexture name="cat idle dance0012" x="0" y="302" width="633" height="297" frameX="-10" frameY="0" frameWidth="643" frameHeight="297"/>
+	<SubTexture name="cat Sing Note RIGHT0000" x="0" y="0" width="625" height="298" frameX="0" frameY="0" frameWidth="628" frameHeight="298"/>
+	<SubTexture name="cat Sing Note RIGHT0001" x="0" y="0" width="625" height="298" frameX="0" frameY="0" frameWidth="628" frameHeight="298"/>
+</TextureAtlas>

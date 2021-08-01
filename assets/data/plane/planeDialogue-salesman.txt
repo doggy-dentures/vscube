@@ -1,0 +1,10 @@
+:cube:Hello, salesman.
+:salesman:Good day, sentient construct! May I interest you in a door?
+:cube:I'm sorry to say, but I'm not interested.
+:salesman:Strange. Usually that wins people over.
+:salesman:If you haven't called me for a door, why am I here?
+:cube:Let's just say I've taken an interest in your skills of persuasion.
+:cube:I also know that you possess an autotuner. Shall we test it?
+:salesman:Will you consider browsing my wares if I accept?
+:cube:I'll consider it...
+:salesman:Allow me to show you what I have to offer.
