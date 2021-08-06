@@ -270,7 +270,7 @@ class DialogueBox extends FlxSpriteGroup
 			dialogueStarted = true;
 		}
 
-		if (FlxG.keys.justPressed.ANY)
+		if (FlxG.keys.justPressed.ANY && dialogueStarted)
 		{
 			remove(dialogue);
 

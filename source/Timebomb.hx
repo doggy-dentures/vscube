@@ -32,6 +32,8 @@ class Timebomb extends FlxSprite
 	override public function new(_target:Character)
 	{
 		super();
+		if (PlayState.easyMode)
+			timeMax = 30;
 		target = _target;
 		scale.x = scale.y = 2.0;
 		updateHitbox();

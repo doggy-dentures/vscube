@@ -105,6 +105,7 @@ class HealthIcon extends FlxSprite
 		animation.add('salesman', [29, 28], 0, false, isPlayer);
 		animation.add('minesweeper', [35, 34], 0, false, isPlayer);
 		animation.add('atlanta', [37, 36], 0, false, isPlayer);
+		animation.add('dilune', [38, 39], 0, false, isPlayer);
 
 		iconSize = width;
 

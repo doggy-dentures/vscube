@@ -53,6 +53,7 @@ class Main extends Sprite
 		addCharacter("minesweeper", "Minesweeper", "Summon a helping crosshair for 20 seconds", "TheMaurii");
 		addCharacter("atlanta", "Atlanta", "Auto-hit notes for 20 seconds", "Ket_Overkill");
 		addCharacter("cat", "Cat", "Slow down the song and projectiles for 25 seconds", "Sonivv");
+		addCharacter("dilune", "Dilune", "Halve the spawn rate of hazards for 25 seconds", "Venesio");
 
 		// if(video){
 		// var ourSource:String = "assets/videos/DO NOT DELETE OR GAME WILL CRASH/dontDelete.webm";

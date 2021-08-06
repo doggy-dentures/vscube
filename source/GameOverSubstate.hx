@@ -1,6 +1,5 @@
 package;
 
-import cpp.Char;
 import flixel.util.FlxDestroyUtil;
 import flixel.FlxG;
 import flixel.FlxObject;

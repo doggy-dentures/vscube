@@ -147,7 +147,7 @@ class Character extends FlxSprite
 				playAnim('idle');
 
 			case 'anders':
-				initialSpecial = 2;
+				initialSpecial = 3;
 				tex = FlxAtlasFrames.fromSparrow('assets/images/anders.png', 'assets/images/anders.xml');
 				frames = tex;
 				animation.addByPrefix('idle', 'Dad idle dance', 24, false);
@@ -249,6 +249,25 @@ class Character extends FlxSprite
 				addOffset("singRIGHT-alt", -50, -80);
 				addOffset("singLEFT-alt", -2, -81);
 				addOffset("singDOWN-alt", -140, -141);
+
+				playAnim('idle');
+
+			case 'dilune':
+				initialSpecial = 2;
+				initFacing = FlxObject.LEFT;
+				tex = FlxAtlasFrames.fromSparrow('assets/images/dilune.png', 'assets/images/dilune.xml');
+				frames = tex;
+				animation.addByPrefix('idle', "Pico Idle Dance", 24, false);
+				animation.addByPrefix('singUP', 'pico Up note0', 24, false);
+				animation.addByPrefix('singDOWN', 'Pico Down Note0', 24, false);
+				animation.addByPrefix('singLEFT', 'Pico NOTE LEFT0', 24, false);
+				animation.addByPrefix('singRIGHT', 'Pico Note Right0', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", 32, 19);
+				addOffset("singLEFT", 104, -8);
+				addOffset("singRIGHT", -17, 1);
+				addOffset("singDOWN", 54, -81);
 
 				playAnim('idle');
 

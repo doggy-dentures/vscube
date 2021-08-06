@@ -129,6 +129,15 @@ class PlayState extends MusicBeatState
 	var autoPlay:Bool = false;
 
 	var dmgMultiplier:Float = 1.0;
+	var initialDmgMultipier:Float = 1.0;
+
+	var spawnRate:Int = 1;
+	var initialSpawnRate:Int = 1;
+	var projCooldown:Int = 0;
+	var bombCooldown:Int = 0;
+	var errorCooldown:Int = 0;
+
+	var cutSceneActivated:Bool = false;
 
 	public static var freezeProj:Int = 0;
 	public static var specialActive:Int = 0;
@@ -146,6 +155,7 @@ class PlayState extends MusicBeatState
 	public static var storyWeek:Int = 0;
 	public static var storyPlaylist:Array<String> = [];
 	public static var storyDifficulty:Int = 1;
+	public static var easyMode:Bool = false;
 
 	public static var returnLocation:String = "main";
 	public static var returnSong:Int = 0;
@@ -285,6 +295,15 @@ class PlayState extends MusicBeatState
 
 		if (overridePlayer1 != "")
 			SONG.player1 = overridePlayer1;
+
+		if (easyMode)
+		{
+			trace("BABY MODE");
+			initialDmgMultipier = 0.5;
+			initialSpawnRate = 2;
+		}
+		dmgMultiplier = initialDmgMultipier;
+		spawnRate = initialSpawnRate;
 
 		hits = 0;
 
@@ -1304,6 +1323,7 @@ class PlayState extends MusicBeatState
 	{
 		FlxG.camera.fade(FlxColor.BLACK, 2, true, function()
 		{
+			cutSceneActivated = true;
 			if (dialogueBox != null)
 			{
 				inCutscene = true;
@@ -1443,7 +1463,7 @@ class PlayState extends MusicBeatState
 		iconP2.visible = true;
 		scoreTxt.visible = true;
 		specialText.visible = true;
-		healthMarker.visible = true;
+		// healthMarker.visible = true;
 
 		generateStaticArrows(0);
 		generateStaticArrows(1);
@@ -1965,13 +1985,16 @@ class PlayState extends MusicBeatState
 			return;
 		}
 
-		if (!inCutscene && !paused && dialogueSeen && !openedSelect && SONG.duet)
+		if (!inCutscene && (cutSceneActivated || !isStoryMode) && !paused && dialogueSeen && !openedSelect && SONG.duet)
 		{
 			openedSelect = true;
 			selectPlayer3();
 		}
-		else
+		else if (!SONG.duet && !openedSelect)
+		{
 			canPause = true;
+			openedSelect = true;
+		}
 
 		// if (boyfriend.isModel && !boyfriend.beganLoading)
 		// {
@@ -2111,8 +2134,11 @@ class PlayState extends MusicBeatState
 						{
 							if (proj.isBomb && !(specialActive > 0 && specialType == 'anders'))
 							{
-								proj.explode();
-								shootBadSound.play(true);
+								if (proj.gracePeriod <= 0)
+								{
+									proj.explode();
+									shootBadSound.play(true);
+								}
 							}
 							else
 							{
@@ -2683,16 +2709,27 @@ class PlayState extends MusicBeatState
 				if (!daNote.samplePlayed && !daNote.mustPress && daNote.strumTime - Conductor.songPosition <= 0)
 				{
 					handleVocalPlayback(daNote, dada, dadi, dadu, dade, dado, dad.noPitching, dad.absoluteLength, dad.noLooping);
-					if (!daNote.isSustainNote && !(specialActive > 0 && specialType == "dad"))
+					if (!daNote.isSustainNote && !(specialActive > 0 && specialType == "dad") && projCooldown == 0)
 					{
 						var newProj = new Projectile(boyfriend, daNote.noteData, true);
-						newProj.setPosition(dad.x + Std.random(Std.int(dad.width + 150)), dad.y + Std.random(Std.int(dad.height + 300)));
+						if (newProj.isBomb && newProj.isEnemyProj)
+						{
+							newProj.setPosition(dad.x + FlxG.random.int(-50, 50), dad.y + FlxG.random.int(-50, 50));
+							newProj.gracePeriod = 1;
+							newProj.maxGracePeriod = 1;
+						}
+						else
+							newProj.setPosition(dad.x + Std.random(Std.int(dad.width + 150)), dad.y + Std.random(Std.int(dad.height + 300)));
 						projectiles.add(newProj);
 						if (newProj.isBomb)
 							newProj.cameras = [camBomb];
 						else
 							newProj.cameras = [camProj];
 					}
+
+					if (!daNote.isSustainNote)
+						projCooldown = (projCooldown + 1) % spawnRate;
+
 					daNote.samplePlayed = true;
 				}
 
@@ -2814,24 +2851,32 @@ class PlayState extends MusicBeatState
 
 	function addTimebomb()
 	{
-		var timebomb = new Timebomb(boyfriend);
-		timebomb.x = FlxG.random.float(0, FlxG.width - timebomb.width);
-		timebomb.y = FlxG.random.float(0, FlxG.height - timebomb.height);
-		add(timebomb);
-		timebombs.add(timebomb);
-		timebomb.countdown.cameras = [camTimebomb];
-		add(timebomb.countdown);
+		if (bombCooldown == 0)
+		{
+			var timebomb = new Timebomb(boyfriend);
+			timebomb.x = FlxG.random.float(0, FlxG.width - timebomb.width);
+			timebomb.y = FlxG.random.float(0, FlxG.height - timebomb.height);
+			add(timebomb);
+			timebombs.add(timebomb);
+			timebomb.countdown.cameras = [camTimebomb];
+			add(timebomb.countdown);
+		}
+		bombCooldown = (bombCooldown + 1) % spawnRate;
 	}
 
 	function addErrorMessage(type:Int = 1, randomY:Bool = false)
 	{
-		var errorMessage = new ErrorMessage(type, randomY);
-		FlxG.sound.play('assets/sounds/error' + TitleState.soundExt);
-		errorMessage.cameras = [camTop];
-		add(errorMessage);
-		errorMessage.button.cameras = [camTop];
-		add(errorMessage.button);
-		errormessages.push(errorMessage);
+		if (errorCooldown == 0)
+		{
+			var errorMessage = new ErrorMessage(type, randomY);
+			FlxG.sound.play('assets/sounds/error' + TitleState.soundExt);
+			errorMessage.cameras = [camTop];
+			add(errorMessage);
+			errorMessage.button.cameras = [camTop];
+			add(errorMessage.button);
+			errormessages.push(errorMessage);
+		}
+		errorCooldown = (errorCooldown + 1) % spawnRate;
 	}
 
 	function doEffect()
@@ -3210,7 +3255,7 @@ class PlayState extends MusicBeatState
 				boyfriend.noHitIncrement = true;
 				onEnd = function()
 				{
-					dmgMultiplier = 1;
+					dmgMultiplier = initialDmgMultipier;
 					boyfriend.alpha = 1;
 					boyfriend.noHitIncrement = false;
 					projectiles.forEachAlive(function(proj)
@@ -3276,6 +3321,14 @@ class PlayState extends MusicBeatState
 					autoPlay = false;
 					if (boyfriend.animation.curAnim.name.endsWith('-alt'))
 						boyfriend.playAnim(boyfriend.animation.curAnim.name.substring(0, boyfriend.animation.curAnim.name.length - 4));
+				}
+			case 'dilune':
+				useTimer = true;
+				timerSec = 25;
+				spawnRate = spawnRate * 2;
+				onEnd = function()
+				{
+					spawnRate = initialSpawnRate;
 				}
 			default:
 				trace("Special for character " + boyfriend.curCharacter + " not found!");
@@ -3391,11 +3444,11 @@ class PlayState extends MusicBeatState
 	function endSong():Void
 	{
 		endingSong = true;
-		if (health < 0.5)
-		{
-			health = 0;
-			return;
-		}
+		// if (health < 0.5)
+		// {
+		// 	health = 0;
+		// 	return;
+		// }
 		canPause = false;
 		musicThing.volume = 0;
 		// vocalthing.volume = 0;

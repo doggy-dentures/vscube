@@ -20,6 +20,8 @@ class Projectile extends FlxSprite
 
 	public var isEnemyProj:Bool = false;
 	public var isBomb:Bool = false;
+	public var gracePeriod:Float = 0;
+	public var maxGracePeriod:Float = 0;
 
 	var xOffset:Float;
 	var yOffset:Float;
@@ -96,7 +98,8 @@ class Projectile extends FlxSprite
 
 		refreshDest();
 
-		FlxVelocity.moveTowardsPoint(this, dest, speed * ((isEnemyProj && PlayState.freezeProj > 0) ? 0 : 1.0) * Conductor.playbackSpeed);
+		FlxVelocity.moveTowardsPoint(this, dest,
+			speed * ((isEnemyProj && PlayState.freezeProj > 0) ? 0 : 1.0) * Conductor.playbackSpeed * (PlayState.easyMode ? 0.6 : 1));
 		angle = FlxAngle.angleBetween(this, target, true);
 
 		// if (FlxG.pixelPerfectOverlap(this, target, 128))
@@ -120,6 +123,17 @@ class Projectile extends FlxSprite
 			else
 				fire();
 		}
+
+		if (gracePeriod > 0)
+		{
+			if (isOnScreen())
+			{
+				gracePeriod = Math.max(0, gracePeriod - FlxG.elapsed);
+				alpha = 0.5;
+			}
+		}
+		else
+			alpha = 1.0;
 	}
 
 	public function fire()

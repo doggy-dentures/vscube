@@ -1,5 +1,7 @@
 package;
 
+import flixel.math.FlxPoint;
+import flixel.addons.display.shapes.FlxShapeArrow;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
@@ -44,6 +46,8 @@ class StoryMenuState extends MusicBeatState
 	// var sprDifficulty:FlxSprite;
 	var leftArrow:FlxSprite;
 	var rightArrow:FlxSprite;
+	var upArrow:FlxShapeArrow;
+	var downArrow:FlxShapeArrow;
 
 	var selectedChar:Int = 0;
 
@@ -52,6 +56,9 @@ class StoryMenuState extends MusicBeatState
 	var charName:FlxText;
 	var charAbility:FlxText;
 	var charCredit:FlxText;
+
+	var easyMode:Bool = true;
+	var difficultyText:FlxText;
 
 	override function create()
 	{
@@ -259,6 +266,24 @@ class StoryMenuState extends MusicBeatState
 
 		changeCharacter();
 
+		difficultyText = new FlxText();
+		difficultyText.setFormat('VCR OSD Mono', 48, FlxColor.WHITE, FlxTextAlign.CENTER);
+		difficultyText.y = charAbility.y + charAbility.height + 50;
+		difficultyText.x = FlxG.width - 200;
+
+		add(difficultyText);
+
+		changeDiff();
+
+		upArrow = new FlxShapeArrow(0,0,FlxPoint.weak(0,0), FlxPoint.weak(0,-1), 24, {color: FlxColor.WHITE});
+		upArrow.x = difficultyText.x + difficultyText.width/2 - upArrow.width/2;
+		upArrow.y = difficultyText.y - upArrow.frameHeight - 30;
+		downArrow = new FlxShapeArrow(0,0,FlxPoint.weak(0,0), FlxPoint.weak(0,1), 24, {color: FlxColor.WHITE});
+		downArrow.x = difficultyText.x + difficultyText.width/2 - downArrow.width/2;
+		downArrow.y = difficultyText.y + difficultyText.frameHeight + 30 + 10;
+		add(downArrow);
+		add(upArrow);
+
 		super.create();
 	}
 
@@ -304,6 +329,21 @@ class StoryMenuState extends MusicBeatState
 					leftArrow.animation.play('press');
 				else
 					leftArrow.animation.play('idle');
+
+				if (controls.UP)
+					upArrow.color = 0x00d5ff;
+				else
+					upArrow.color = 0xffffff;
+
+				if (controls.DOWN)
+					downArrow.color = 0x00d5ff;
+				else
+					downArrow.color = 0xffffff;
+
+				if (controls.UP_P)
+					changeDiff();
+				if (controls.DOWN_P)
+					changeDiff();
 
 				if (controls.RIGHT_P)
 					changeCharacter(1);
@@ -355,6 +395,19 @@ class StoryMenuState extends MusicBeatState
 		
 	}
 
+	function changeDiff()
+	{
+		FlxG.sound.play('assets/sounds/scrollMenu' + TitleState.soundExt);
+		easyMode = !easyMode;
+		switch (easyMode)
+		{
+			case false:
+				difficultyText.text = "Hard";
+			case true:
+				difficultyText.text = "Easy";
+		}
+	}
+
 	function selectWeek()
 	{
 		if (true)
@@ -371,6 +424,7 @@ class StoryMenuState extends MusicBeatState
 
 			PlayState.storyPlaylist = ['Plane', 'Face', 'Yaw', 'Tesseract'];
 			PlayState.isStoryMode = true;
+			PlayState.easyMode = easyMode;
 			selectedWeek = true;
 
 			var diffic = "";
